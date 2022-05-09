@@ -1,5 +1,9 @@
 package ru.grobikon.inventoryservice.service;
 
+import ru.grobikon.inventoryservice.dto.InventoryResponse;
+
+import java.util.List;
+
 public interface InventoryService {
-    boolean isInStock(String skuCode);
+    List<InventoryResponse> isInStock(List<String> skuCode);
 }
